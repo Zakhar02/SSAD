@@ -1,13 +1,9 @@
 import string
 
 
-def reverse_string(str):
-    return str[::-1]
-
-
-def main():
+def reverse_string():
     print("Input string:")
-    str = reverse_string(input())
+    str = input()[::-1]
     print("Reversed string:")
     print(str)
     txt = str.lower()
@@ -16,6 +12,10 @@ def main():
             print("  ")
         else:
             print(string.ascii_lowercase.index(i) + 1, end=' ')
+
+
+def main():
+    reverse_string()
 
 
 if __name__ == "__main__":
